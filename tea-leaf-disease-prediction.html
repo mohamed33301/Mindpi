@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi | منصة حلول الذكاء الاصطناعي</title>
+    <!-- استيراد الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Icon Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries CSS -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Floating Button Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 35px;
+            left: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Call Button Style */
+        .call-btn {
+            background-color: #007BFF;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* WhatsApp Button Style */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <style>
+        :root {
+            --primary-color: #3e0a6d;
+            --secondary-color: #bd45d8;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-light);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e0533 0%, #3e0a6d 100%);
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            transition: 0.4s;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+    <style class="gtranslate_css">
+        a.glink {
+            text-decoration: none
+        }
+
+        a.glink.gt-current-lang {
+            font-weight: bold
+        }
+
+        .gt_container--efh50j a.glink span {
+            margin-right: 3px;
+            font-size: 10px;
+            vertical-align: middle
+        }
+
+        a.glink img {
+            vertical-align: middle;
+            display: inline;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            opacity: 0.8;
+            height: auto
+        }
+
+        a.glink:hover img {
+            opacity: 1
+        }
+
+        .gt_black_overlay {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 10000;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80)
+        }
+
+        .gt_white_content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 131px;
+            height: 243px;
+            margin: -121.5px 0 0 -65.5px;
+            padding: 6px 16px;
+            background-color: white;
+            color: black;
+            z-index: 19881205;
+            overflow: auto;
+            text-align: left
+        }
+
+        .gt_white_content a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #e7e7e7;
+            white-space: nowrap;
+            line-height: 0;
+            flex-basis: 33px;
+            box-sizing: border-box;
+        }
+
+        .gt_white_content .gt_languages {
+            display: flex;
+            flex-flow: column wrap;
+            max-height: 243px;
+            overflow-x: hidden;
+        }
+
+        .gt_white_content::-webkit-scrollbar-track {
+            background-color: #F5F5F5
+        }
+
+        .gt_white_content::-webkit-scrollbar {
+            width: 5px
+        }
+
+        .gt_white_content::-webkit-scrollbar-thumb {
+            background-color: #888
+        }
+
+        div.skiptranslate,
+        #google_translate_element2 {
+            display: none !important
+        }
+
+        body {
+            top: 0 !important
+        }
+
+        font font {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            position: initial !important
+        }
+    </style>
+</head>
+<script>
+    function googleTranslateElementInit2() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'ar',
+                includedLanguages: 'ar,en,de,it,ru,ja,zh-CN',
+                autoDisplay: false
+            },
+            'google_translate_element2'
+        );
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const switcher = document.querySelector(".gt_switcher-popup");
+        const menu = document.querySelector(".gt_white_content");
+
+        if (switcher && menu) {
+            switcher.addEventListener("click", e => {
+                e.preventDefault();
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
+            });
+        }
+
+        document.querySelectorAll(".glink[data-gt-lang]").forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                const lang = link.dataset.gtLang;
+
+                const select = document.querySelector("select.goog-te-combo");
+                if (!select) {
+                    console.error("Google Translate not loaded");
+                    return;
+                }
+
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+                menu.style.display = "none";
+            });
+        });
+
+    });
+</script>
+
+<body>
+
+    <!-- Header / الهيدر -->
+    <header class="gradient-bg sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
+
+            <!-- LEFT SIDE -->
+            <div class="flex items-center gap-8">
+
+                <!-- LOGO -->
+                <div class="text-3xl font-bold tracking-widest text-white">
+                    MIND<span class="text-purple-400">PI</span>
+                </div>
+
+                <!-- NAVIGATION -->
+                <nav class="hidden lg:flex gap-6 font-medium">
+                    <a href="index.html" class="nav-link text-white">الرئيسية</a>
+                    <a href="projects.html" class="nav-link text-white">مشاريع AI</a>
+                    <a href="products.html" class="nav-link text-white">هاردوير AI</a>
+                    <a href="about.html" class="nav-link text-white">من نحن</a>
+                    <!-- <a href="#" class="nav-link text-white">اتصل بنا</a> -->
+                </nav>
+
+                <!-- LANGUAGE SWITCHER -->
+                <ul class="relative list-none">
+                    <li class="menu-item menu-item-gtranslate gt_container-rswlkm">
+                        <a href="#"
+                            class="gt_switcher-popup glink nturl notranslate flex items-center gap-2 text-white">
+                            <img src="/wp-content/plugins/gtranslate/flags/svg/en.svg" width="16" height="16" alt="ar">
+                            <span>العربية</span>
+                            <span class="text-xs">▼</span>
+                        </a>
+
+                        <div
+                            class="gt_white_content notranslate absolute top-full mt-2 bg-white text-black rounded shadow-lg">
+                            <div class="gt_languages flex flex-col">
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="ar">العربية</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="en">English</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="de">Deutsch</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="it">Italiano</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="ru">Русский</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="flex items-center gap-4">
+
+                <!-- SEARCH -->
+                <div class="relative hidden sm:block">
+                    <input type="text" placeholder="بحث عن مشروع..."
+                        class="bg-white/10 border border-white/20 rounded-full px-4 py-1 text-sm outline-none focus:bg-white/20 w-64 text-right text-white placeholder-white/70" />
+                    <i class="fas fa-search absolute left-3 top-2 text-white/60"></i>
+                </div>
+
+                <!-- CTA -->
+                <a href="#"
+                    class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full text-sm font-bold shadow-lg transition text-white">
+                    ابدأ الآن
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <div id="google_translate_element2"></div>
+    <section class="max-w-5xl mx-auto px-4 py-10 text-left select-none" dir="ltr">
+        <!-- Image -->
+        <div class="mb-6">
+            <img src="img/99.webp" alt="Tea Leaf Disease Prediction System" class="w-full rounded-lg shadow-md">
+        </div>
+    
+        <!-- Title -->
+        <h2 class="text-2xl md:text-3xl font-bold text-purple-700 mb-1">
+            نظام ذكي للتنبؤ بأمراض أوراق الشاي
+        </h2>
+        <p class="text-lg md:text-xl font-semibold text-gray-600 mb-4">
+            Tea Leaf Disease Prediction System
+        </p>
+    
+        <!-- Price -->
+        <div class="flex items-center gap-4 mb-6">
+            <span class="text-gray-400 line-through text-lg">$70</span>
+            <span class="text-red-600 font-bold text-2xl">$50</span>
+            <div class="text-sm text-gray-600">
+                ≈ 2500 EGP
+            </div>
+        </div>
+        <!-- Buy Now Button -->
+        <div class="mb-8 text-left">
+            <a href="https://wa.me/201044207402"
+                class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full font-bold shadow-md transition">
+                Buy Now
+            </a>
+        </div>
+    
+        <!-- Short Description -->
+        <p class="text-gray-700 leading-relaxed mb-6">
+            This system leverages advanced image processing and machine learning techniques to accurately detect and predict
+            diseases in tea leaves from images, enabling early intervention and improved crop management.
+        </p>
+    
+        <!-- Project Overview -->
+        <h3 class="text-xl font-bold text-purple-700 mb-4">Project Overview</h3>
+        <p class="text-gray-700 leading-relaxed mb-6">
+            The Tea Leaf Disease Prediction System analyzes images of tea leaves using computer vision and machine learning
+            models to identify various diseases in real time. It helps farmers and agricultural experts take timely action
+            to prevent disease spread, improve crop health, and increase yield quality.
+        </p>
+    
+        <!-- Key Features -->
+        <h3 class="text-xl font-bold text-purple-700 mb-4">Key Features</h3>
+    
+        <!-- Feature 1 -->
+        <h4 class="font-semibold text-gray-800 mb-2">Image-Based Disease Detection</h4>
+        <ul class="space-y-2 text-gray-700 mb-4">
+            <li>🍃 Analyzes tea leaf images using image processing techniques.</li>
+            <li>🔍 Identifies visible disease patterns and symptoms.</li>
+        </ul>
+    
+        <!-- Feature 2 -->
+        <h4 class="font-semibold text-gray-800 mb-2">High Accuracy Machine Learning Models</h4>
+        <ul class="space-y-2 text-gray-700 mb-4">
+            <li>🧠 Uses trained ML models for reliable disease prediction.</li>
+            <li>🎯 Minimizes false predictions and misclassification.</li>
+        </ul>
+    
+        <!-- Feature 3 -->
+        <h4 class="font-semibold text-gray-800 mb-2">Real-Time Analysis</h4>
+        <ul class="space-y-2 text-gray-700 mb-4">
+            <li>⚡ Instant disease detection after image upload.</li>
+            <li>⏱️ Enables fast decision-making for treatment.</li>
+        </ul>
+    
+        <!-- Feature 4 -->
+        <h4 class="font-semibold text-gray-800 mb-2">User-Friendly Interface</h4>
+        <ul class="space-y-2 text-gray-700 mb-4">
+            <li>📤 Simple image upload process.</li>
+            <li>📊 Clear and understandable prediction results.</li>
+        </ul>
+    
+        <!-- Feature 5 -->
+        <h4 class="font-semibold text-gray-800 mb-2">Reporting & Scalability</h4>
+        <ul class="space-y-2 text-gray-700 mb-6">
+            <li>📝 Generates detailed disease reports.</li>
+            <li>📈 Scalable for small farms and large plantations.</li>
+        </ul>
+    
+        <!-- Technology Stack -->
+        <h3 class="text-xl font-bold text-purple-700 mb-4">Technology Stack</h3>
+        <ul class="space-y-2 text-gray-700 mb-6">
+            <li>🐍 Programming Language: Python</li>
+            <li>🎥 Image Processing: OpenCV</li>
+            <li>🧠 Machine Learning: CNN / ML Models</li>
+            <li>📊 Data Analysis & Reporting</li>
+        </ul>
+    
+        <!-- Use Cases -->
+        <h3 class="text-xl font-bold text-purple-700 mb-4">Use Cases</h3>
+        <ul class="space-y-2 text-gray-700 mb-6">
+            <li>🌱 Tea Farms – Early disease detection and prevention.</li>
+            <li>🔬 Agricultural Research – Study and analyze tea leaf diseases.</li>
+            <li>🏢 Agricultural Extension Services – Farmer education and advisory.</li>
+        </ul>
+    
+        <!-- Conclusion -->
+        <h3 class="text-xl font-bold text-purple-700 mb-4">Conclusion</h3>
+        <p class="text-gray-700 leading-relaxed">
+            The Tea Leaf Disease Prediction System provides a powerful AI-driven solution for sustainable tea farming. By
+            enabling early disease detection through image processing and machine learning, it helps improve crop health,
+            increase yield quality, and reduce losses, making it an essential tool for modern agriculture.
+        </p>
+    </section>
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container pt-2">
+        <div class="row g-2">
+
+            <div class="col-lg-4 col-md-6">
+                <h3 class="text-white mb-4">الصفحات</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>الرئيسية</a>
+
+                    <a class="text-light mb-2" href="projects.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>هاردوير AI</a>
+                    <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>من
+                        نحن</a>
+                    <!-- <a class="text-light mb-2" href="service.html"><i
+    									class="bi bi-arrow-right text-primary me-2"></i>خدماتنا</a> -->
+                    <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>اتصل
+                            بنا</a> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تواصل معنا</h3>
+                <!-- <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>العبور - الحي الثاني - سنترال وي
+    						</p> -->
+                <p class="mb-2" style="font-size: 0.9em;">
+                    <i class="bi bi-envelope-open text-primary me-2"></i> mindpi0101@gmail.com
+                </p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>01044207402</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تابعنا</h3>
+                <div class="d-flex">
+
+                    <a class="btn btn-primary btn-lg-square rounded me-2"
+                        href="https://www.facebook.com/share/1DKxKE8UfQ/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://youtube.com/@mindpi0101"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://x.com"><i
+                            class="fab fa-twitter"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom styles to further reduce the footer size */
+    .container-fluid.bg-dark {
+        padding: 1.5rem 0;
+        /* Minimal footer padding */
+    }
+
+    .container.pt-2 {
+        padding-top: 1rem;
+        /* Even smaller top padding */
+    }
+
+    .row.g-2 {
+        gap: 0.5rem;
+        /* Minimal gap between columns */
+    }
+
+    .text-light {
+        font-size: 0.8rem;
+        /* Smaller font size for footer text */
+    }
+</style>
+
+<!-- Footer Bottom -->
+<div class="container-fluid bg-primary text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">All Rights Reserved to <a class="text-white border-bottom"
+                        href="index.html">Mindpi</a> 2026</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by <a class="text-white border-bottom"
+                        href="https://www.linkedin.com/in/mohamed2mohsen">Mohamed Mohsen</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+
+
+
+
+
+
+<!-- Your existing content here -->
+
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+    <!-- Call Button -->
+    <a href="tel:01044207402" class="call-btn" aria-label="Call directly to 01044207402">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+
+    <a id="whatsapp-link" class="whatsapp-btn" target="_blank" aria-label="Open WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Detect device type and update the WhatsApp link
+        const whatsappNumber = "201044207402";
+        const message = ""; // Pre-fill a message if desired
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const whatsappLink = isMobile
+            ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+            : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+        document.getElementById("whatsapp-link").href = whatsappLink;
+    </script>
+
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

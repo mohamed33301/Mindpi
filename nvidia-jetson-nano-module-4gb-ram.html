@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi | منصة حلول الذكاء الاصطناعي</title>
+    <!-- استيراد الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Icon Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries CSS -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Floating Button Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 35px;
+            left: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Call Button Style */
+        .call-btn {
+            background-color: #007BFF;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* WhatsApp Button Style */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <style>
+        :root {
+            --primary-color: #3e0a6d;
+            --secondary-color: #bd45d8;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-light);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e0533 0%, #3e0a6d 100%);
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            transition: 0.4s;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+    <style class="gtranslate_css">
+        a.glink {
+            text-decoration: none
+        }
+
+        a.glink.gt-current-lang {
+            font-weight: bold
+        }
+
+        .gt_container--efh50j a.glink span {
+            margin-left: 3px;
+            font-size: 10px;
+            vertical-align: middle
+        }
+
+        a.glink img {
+            vertical-align: middle;
+            display: inline;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            opacity: 0.8;
+            height: auto
+        }
+
+        a.glink:hover img {
+            opacity: 1
+        }
+
+        .gt_black_overlay {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 10000;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80)
+        }
+
+        .gt_white_content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 131px;
+            height: 243px;
+            margin: -121.5px 0 0 -65.5px;
+            padding: 6px 16px;
+            background-color: white;
+            color: black;
+            z-index: 19881205;
+            overflow: auto;
+            text-align: left
+        }
+
+        .gt_white_content a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #e7e7e7;
+            white-space: nowrap;
+            line-height: 0;
+            flex-basis: 33px;
+            box-sizing: border-box;
+        }
+
+        .gt_white_content .gt_languages {
+            display: flex;
+            flex-flow: column wrap;
+            max-height: 243px;
+            overflow-x: hidden;
+        }
+
+        .gt_white_content::-webkit-scrollbar-track {
+            background-color: #F5F5F5
+        }
+
+        .gt_white_content::-webkit-scrollbar {
+            width: 5px
+        }
+
+        .gt_white_content::-webkit-scrollbar-thumb {
+            background-color: #888
+        }
+
+        div.skiptranslate,
+        #google_translate_element2 {
+            display: none !important
+        }
+
+        body {
+            top: 0 !important
+        }
+
+        font font {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            position: initial !important
+        }
+    </style>
+    <style>
+        .thumbnail {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            cursor: pointer;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 4px;
+            transition: 0.3s;
+        }
+
+        .thumbnail:hover {
+            border-color: #9333ea;
+            /* purple */
+        }
+
+        .active-thumb {
+            border-color: #9333ea;
+        }
+    </style>
+
+</head>
+<script>
+    function googleTranslateElementInit2() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'ar',
+                includedLanguages: 'ar,en,de,it,ru,ja,zh-CN',
+                autoDisplay: false
+            },
+            'google_translate_element2'
+        );
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const switcher = document.querySelector(".gt_switcher-popup");
+        const menu = document.querySelector(".gt_white_content");
+
+        if (switcher && menu) {
+            switcher.addEventListener("click", e => {
+                e.preventDefault();
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
+            });
+        }
+
+        document.querySelectorAll(".glink[data-gt-lang]").forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                const lang = link.dataset.gtLang;
+
+                const select = document.querySelector("select.goog-te-combo");
+                if (!select) {
+                    console.error("Google Translate not loaded");
+                    return;
+                }
+
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+                menu.style.display = "none";
+            });
+        });
+
+    });
+</script>
+<script>
+    function changeImage(element) {
+        document.getElementById("mainImage").src = element.src;
+
+        document.querySelectorAll(".thumbnail").forEach(img => {
+            img.classList.remove("active-thumb");
+        });
+
+        element.classList.add("active-thumb");
+    }
+</script>
+
+<body>
+
+    <!-- Header / الهيدر -->
+    <header class="gradient-bg sticky top-0 z-50 shadow-xl">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
+
+            <!-- LEFT SIDE -->
+            <div class="flex items-center gap-8">
+
+                <!-- LOGO -->
+                <div class="text-3xl font-bold tracking-widest text-white">
+                    MIND<span class="text-purple-400">PI</span>
+                </div>
+
+                <!-- NAVIGATION -->
+                <nav class="hidden lg:flex gap-6 font-medium">
+                    <a href="index.html" class="nav-link text-white">الرئيسية</a>
+                    <a href="projects.html" class="nav-link text-white">مشاريع AI</a>
+                    <a href="products.html" class="nav-link text-white">هاردوير AI</a>
+                    <a href="about.html" class="nav-link text-white">من نحن</a>
+                    <!-- <a href="#" class="nav-link text-white">اتصل بنا</a> -->
+                </nav>
+
+                <!-- LANGUAGE SWITCHER -->
+                <ul class="relative list-none">
+                    <li class="menu-item menu-item-gtranslate gt_container-rswlkm">
+                        <a href="#"
+                            class="gt_switcher-popup glink nturl notranslate flex items-center gap-2 text-white">
+                            <img src="/wp-content/plugins/gtranslate/flags/svg/en.svg" width="16" height="16" alt="ar">
+                            <span>العربية</span>
+                            <span class="text-xs">▼</span>
+                        </a>
+
+                        <div
+                            class="gt_white_content notranslate absolute top-full mt-2 bg-white text-black rounded shadow-lg">
+                            <div class="gt_languages flex flex-col">
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="ar">العربية</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="en">English</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="de">Deutsch</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="it">Italiano</a>
+                                <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100"
+                                    data-gt-lang="ru">Русский</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <!-- left SIDE -->
+            <div class="flex items-center gap-4">
+
+                <!-- SEARCH -->
+                <div class="relative hidden sm:block">
+                    <input type="text" placeholder="بحث عن مشروع..."
+                        class="bg-white/10 border border-white/20 rounded-full px-4 py-1 text-sm outline-none focus:bg-white/20 w-64 text-left text-white placeholder-white/70" />
+                    <i class="fas fa-search absolute left-3 top-2 text-white/60"></i>
+                </div>
+
+                <!-- CTA -->
+                <a href="#"
+                    class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full text-sm font-bold shadow-lg transition text-white">
+                    ابدأ الآن
+                </a>
+
+            </div>
+
+        </div>
+    </header>
+    <div id="google_translate_element2"></div>
+
+
+    <section dir="ltr" class="max-w-6xl mx-auto px-4 py-10 bg-white rounded-2xl shadow-lg mt-6">
+        <!-- Product Gallery -->
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-4 mb-8">
+
+            <!-- Main Image -->
+            <div class="md:col-span-4 border rounded-xl p-4 flex items-center justify-center">
+                <img id="mainImage" src="imgproducts/9.webp" alt="Jetson AGX Xavier"
+                    class="rounded-xl max-h-[400px] object-contain transition">
+            </div>
+
+            <!-- Thumbnails -->
+            <div class="flex md:flex-col gap-3 justify-center">
+
+                <img src="imgproducts/9.webp" onclick="changeImage(this)" class="thumbnail active-thumb">
+
+                <img src="imgproducts/9.1.webp" onclick="changeImage(this)" class="thumbnail">
+
+                <img src="imgproducts/9.2.webp" onclick="changeImage(this)" class="thumbnail">
+
+                <img src="imgproducts/9.3.webp" onclick="changeImage(this)" class="thumbnail">
+
+            </div>
+        </div>
+
+
+        <!-- Product Title -->
+        <h1 class="text-3xl font-extrabold text-purple-800 mb-2 text-left">
+            NVIDIA Jetson Nano Module 4GB RAM
+        </h1>
+        
+        <!-- Short Description -->
+        <p class="text-gray-700 leading-relaxed mb-4 text-left">
+            A compact and power-efficient AI System-on-Module designed for embedded systems
+            and intelligent IoT applications. Jetson Nano delivers strong AI performance
+            for computer vision, robotics, and edge inference.
+        </p>
+        
+        <!-- Price & Availability -->
+        <div class="flex flex-wrap items-center justify-between border-y py-4 mb-6">
+        
+            <!-- Price -->
+            <div class="text-left">
+                <span class="text-3xl font-bold text-red-600 ml-2">
+                    12,000
+                    <span class="text-lg font-medium">EGP</span>
+                </span>
+            </div>
+        
+            <!-- Availability -->
+            <div class="text-left">
+                <span class="text-green-600 font-semibold">
+                    ✔ Availability: In Stock
+                </span>
+            </div>
+        
+        </div>
+        
+        <!-- Buy Now Button -->
+        <div class="mb-8 text-left">
+            <a href="https://wa.me/201044207402"
+                class="inline-block bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-full font-bold shadow-md transition">
+                Buy Now
+            </a>
+        </div>
+        
+        <!-- Full Description -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-purple-700 mb-3 text-left">
+                Product Description
+            </h2>
+            <p class="text-gray-700 leading-loose text-left">
+                The NVIDIA Jetson Nano Module 4GB RAM is a high-performance System-on-Module
+                (SoM) built for AI-powered embedded and IoT applications. It is based on the
+                NVIDIA Tegra X1 architecture and combines a quad-core ARM Cortex-A57 CPU with
+                a 128-core Maxwell GPU.
+                <br><br>
+                With 4GB LPDDR4 memory, 16GB eMMC storage, and support for the NVIDIA JetPack SDK,
+                Jetson Nano enables real-time computer vision, robotics control, and deep
+                learning inference at the edge while maintaining low power consumption
+                between 5–10W.
+            </p>
+        </div>
+        
+        <!-- Key Features -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-purple-700 mb-3 text-left">
+                Key Features
+            </h2>
+            <ul class="list-disc pr-6 text-gray-700 space-y-2 text-left">
+                <li>128-core NVIDIA Maxwell™ GPU</li>
+                <li>Quad-core ARM® Cortex®-A57 CPU up to 1.43 GHz</li>
+                <li>4GB 64-bit LPDDR4 memory (25.6 GB/s bandwidth)</li>
+                <li>16GB eMMC 5.1 onboard storage</li>
+                <li>AI framework support: TensorFlow, PyTorch, Caffe</li>
+                <li>Low power consumption (5W – 10W)</li>
+                <li>Compact 69.6mm × 45mm System-on-Module design</li>
+            </ul>
+        </div>
+        
+        <!-- Specifications -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-purple-700 mb-4 text-left">
+                Specifications
+            </h2>
+        
+            <div class="overflow-x-auto">
+                <table class="w-full border text-left text-sm">
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="font-semibold p-2">AI Performance</td>
+                            <td class="p-2">Up to 472 GFLOPS (FP16)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">GPU</td>
+                            <td class="p-2">128-core NVIDIA Maxwell™ GPU (921 MHz)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">CPU</td>
+                            <td class="p-2">Quad-core ARM® Cortex®-A57 @ 1.43 GHz</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Memory</td>
+                            <td class="p-2">4GB 64-bit LPDDR4 (25.6 GB/s)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Storage</td>
+                            <td class="p-2">16GB eMMC 5.1</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Video Encode</td>
+                            <td class="p-2">4K@30 (H.265), 1080p@60</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Video Decode</td>
+                            <td class="p-2">4K@60 (H.265)</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Connectivity</td>
+                            <td class="p-2">USB 3.0, HDMI 2.0, Gigabit Ethernet, MIPI CSI-2</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Power</td>
+                            <td class="p-2">5W – 10W</td>
+                        </tr>
+                        <tr>
+                            <td class="font-semibold p-2">Dimensions</td>
+                            <td class="p-2">69.6mm × 45mm (260-pin SO-DIMM)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Applications -->
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-purple-700 mb-3 text-left">
+                Applications
+            </h2>
+            <ul class="list-disc pr-6 text-gray-700 space-y-2 text-left">
+                <li>Autonomous robots and navigation systems</li>
+                <li>Smart cameras and real-time video analytics</li>
+                <li>Edge AI inference for IoT devices</li>
+                <li>AI-powered drones and object detection</li>
+                <li>Education and embedded AI development</li>
+            </ul>
+        </div>
+        
+        <!-- Meta Info -->
+        <div class="border-t pt-4 text-sm text-gray-600 text-left">
+            <p><strong>SKU:</strong> 102110405</p>
+            <p><strong>Brand:</strong> NVIDIA</p>
+            <p><strong>Categories:</strong> Development Boards</p>
+            <p><strong>Tags:</strong> Jetson Nano, AI Module, Embedded AI, NVIDIA</p>
+        </div>
+
+
+    </section>
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container pt-2">
+        <div class="row g-2">
+
+            <div class="col-lg-4 col-md-6">
+                <h3 class="text-white mb-4">الصفحات</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>الرئيسية</a>
+
+                    <a class="text-light mb-2" href="projects.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>هاردوير AI</a>
+                    <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>من
+                        نحن</a>
+                    <!-- <a class="text-light mb-2" href="service.html"><i
+    									class="bi bi-arrow-right text-primary me-2"></i>خدماتنا</a> -->
+                    <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>اتصل
+                            بنا</a> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تواصل معنا</h3>
+                <!-- <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>العبور - الحي الثاني - سنترال وي
+    						</p> -->
+                <p class="mb-2" style="font-size: 0.9em;">
+                    <i class="bi bi-envelope-open text-primary me-2"></i> mindpi0101@gmail.com
+                </p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>01044207402</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تابعنا</h3>
+                <div class="d-flex">
+
+                    <a class="btn btn-primary btn-lg-square rounded me-2"
+                        href="https://www.facebook.com/share/1DKxKE8UfQ/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://youtube.com/@mindpi0101"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://x.com"><i
+                            class="fab fa-twitter"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom styles to further reduce the footer size */
+    .container-fluid.bg-dark {
+        padding: 1.5rem 0;
+        /* Minimal footer padding */
+    }
+
+    .container.pt-2 {
+        padding-top: 1rem;
+        /* Even smaller top padding */
+    }
+
+    .row.g-2 {
+        gap: 0.5rem;
+        /* Minimal gap between columns */
+    }
+
+    .text-light {
+        font-size: 0.8rem;
+        /* Smaller font size for footer text */
+    }
+</style>
+
+<!-- Footer Bottom -->
+<div class="container-fluid bg-primary text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">All Rights Reserved to <a class="text-white border-bottom"
+                        href="index.html">Mindpi</a> 2026</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by <a class="text-white border-bottom"
+                        href="https://www.linkedin.com/in/mohamed2mohsen">Mohamed Mohsen</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+
+
+
+
+
+
+<!-- Your existing content here -->
+
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+    <!-- Call Button -->
+    <a href="tel:01044207402" class="call-btn" aria-label="Call directly to 01044207402">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+
+    <a id="whatsapp-link" class="whatsapp-btn" target="_blank" aria-label="Open WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Detect device type and update the WhatsApp link
+        const whatsappNumber = "201044207402";
+        const message = ""; // Pre-fill a message if desired
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const whatsappLink = isMobile
+            ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+            : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+        document.getElementById("whatsapp-link").href = whatsappLink;
+    </script>
+
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,3286 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi | منصة حلول الذكاء الاصطناعي</title>
+    <!-- استيراد الخطوط والأيقونات -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindpi</title>
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Icon Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Libraries CSS -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        /* Floating Button Container */
+        .floating-buttons {
+            position: fixed;
+            bottom: 50px;
+            left: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        /* Call Button Style */
+        .call-btn {
+            background-color: #007BFF;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .call-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* WhatsApp Button Style */
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+
+    <style>
+        :root {
+            --primary-color: #3e0a6d;
+            --secondary-color: #bd45d8;
+            --bg-light: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-light);
+        }
+
+        .gradient-bg {
+            background: linear-gradient(150deg, #1e0533 0%, #3e0a6d 100%);
+        }
+
+        .nav-link:hover {
+            color: var(--secondary-color);
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            transition: 0.4s;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: white;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .scroll-mt-100 {
+            scroll-margin-top: 100px;   /* مسافة من أعلى الشاشة عشان ما يتغطاش بالهيدر الثابت */
+        }
+
+        /* تحسين مظهر الأزرار على الموبايل */
+        @media (max-width: 576px) {
+            .btn.rounded-pill {
+                font-size: 0.9rem;
+                padding: 0.5rem 1rem;
+            }
+        }
+        /* في <style> أو style.css */
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 3px;
+            background: var(--primary-color);
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .service-item {
+            transition: all 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+    </style>
+    <style class="gtranslate_css">
+        a.glink {
+            text-decoration: none
+        }
+
+        a.glink.gt-current-lang {
+            font-weight: bold
+        }
+
+        .gt_container--efh50j a.glink span {
+            margin-right: 3px;
+            font-size: 10px;
+            vertical-align: middle
+        }
+
+        a.glink img {
+            vertical-align: middle;
+            display: inline;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            opacity: 0.8;
+            height: auto
+        }
+
+        a.glink:hover img {
+            opacity: 1
+        }
+
+        .gt_black_overlay {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 10000;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80)
+        }
+
+        .gt_white_content {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 131px;
+            height: 243px;
+            margin: -121.5px 0 0 -65.5px;
+            padding: 6px 16px;
+            background-color: white;
+            color: black;
+            z-index: 19881505;
+            overflow: auto;
+            text-align: left
+        }
+
+        .gt_white_content a {
+            display: block;
+            padding: 10px 0;
+            border-bottom: 1px solid #e7e7e7;
+            white-space: nowrap;
+            line-height: 0;
+            flex-basis: 33px;
+            box-sizing: border-box;
+        }
+
+        .gt_white_content .gt_languages {
+            display: flex;
+            flex-flow: column wrap;
+            max-height: 243px;
+            overflow-x: hidden;
+        }
+
+        .gt_white_content::-webkit-scrollbar-track {
+            background-color: #F5F5F5
+        }
+
+        .gt_white_content::-webkit-scrollbar {
+            width: 5px
+        }
+
+        .gt_white_content::-webkit-scrollbar-thumb {
+            background-color: #888
+        }
+
+        div.skiptranslate,
+        #google_translate_element2 {
+            display: none !important
+        }
+
+        body {
+            top: 0 !important
+        }
+
+        font font {
+            background-color: transparent !important;
+            box-shadow: none !important;
+            position: initial !important
+        }
+        .service-item {
+            overflow: hidden;
+        }
+
+        .service-img {
+            width: 100%;
+            height: 160px;        /* حجم مناسب للموبايل */
+            object-fit: cover;
+            margin-bottom: 0;    /* مفيش مسافة */
+        }
+
+        @media (max-width: 768px) {
+            .service-img {
+                height: 150px;
+            }
+
+            .service-item h3 {
+                font-size: 16px;
+            }
+
+            .service-item p {
+                font-size: 13px;
+                line-height: 1.4;
+            }
+        }
+        .service-item {
+            height: 100%;
+        }
+        .service-title {
+            font-size: 14px;      /* Desktop */
+            line-height: 1.3;
+            font-weight: 600;
+        }
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .service-link:hover,
+        .service-link:focus {
+            color: inherit;
+        }
+
+        .service-item {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .service-item:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Price Styling */
+        .price-box {
+            font-size: 14px;
+        }
+
+        .egp-price {
+            font-weight: bold;
+            color: #198754; /* أخضر */
+            margin-top: 4px;
+            font-size: 15px;
+        }
+
+        /* Remove blue focus */
+        .service-link:focus,
+        .service-link:active {
+            outline: none;
+            box-shadow: none;
+        }
+
+
+        /* Tablet */
+        @media (max-width: 992px) {
+            .service-title {
+                font-size: 13px;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 576px) {
+            .service-title {
+                font-size: 11px;
+                line-height: 1.2;
+            }
+        }
+
+
+    </style>
+</head>
+<script>
+    function googleTranslateElementInit2() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'ar',
+                includedLanguages: 'ar,en,de,it,ru,ja,zh-CN',
+                autoDisplay: false
+            },
+            'google_translate_element2'
+        );
+    }
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const switcher = document.querySelector(".gt_switcher-popup");
+        const menu = document.querySelector(".gt_white_content");
+
+        if (switcher && menu) {
+            switcher.addEventListener("click", e => {
+                e.preventDefault();
+                menu.style.display = menu.style.display === "block" ? "none" : "block";
+            });
+        }
+
+        document.querySelectorAll(".glink[data-gt-lang]").forEach(link => {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                const lang = link.dataset.gtLang;
+
+                const select = document.querySelector("select.goog-te-combo");
+                if (!select) {
+                    console.error("Google Translate not loaded");
+                    return;
+                }
+
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+                menu.style.display = "none";
+            });
+        });
+
+    });
+</script>
+<body>
+      
+            <header class="gradient-bg sticky top-0 z-50 shadow-xl">
+                <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
+            
+                    <!-- LEFT SIDE -->
+                    <div class="flex items-center gap-8">
+            
+                        <!-- LOGO -->
+                        <div class="text-3xl font-bold tracking-widest text-white">
+                            MIND<span class="text-purple-400">PI</span>
+                        </div>
+            
+                        <!-- NAVIGATION -->
+                        <nav class="hidden lg:flex gap-6 font-medium">
+                            <a href="index.html" class="nav-link text-white">الرئيسية</a>
+                            <a href="projects.html" class="nav-link text-white">مشاريع AI</a>
+                            <a href="products.html" class="nav-link text-white">هاردوير AI</a>
+                            <a href="about.html" class="nav-link text-white">من نحن</a>
+                            <!-- <a href="#" class="nav-link text-white">اتصل بنا</a> -->
+                        </nav>
+            
+                        <!-- LANGUAGE SWITCHER -->
+                        <ul class="relative list-none">
+                            <li class="menu-item menu-item-gtranslate gt_container-rswlkm">
+                                <a href="#" class="gt_switcher-popup glink nturl notranslate flex items-center gap-2 text-white">
+                                    <img src="/wp-content/plugins/gtranslate/flags/svg/en.svg" width="16" height="16" alt="ar">
+                                    <span>العربية</span>
+                                    <span class="text-xs">▼</span>
+                                </a>
+            
+                                <div
+                                    class="gt_white_content notranslate absolute top-full mt-2 bg-white text-black rounded shadow-lg">
+                                    <div class="gt_languages flex flex-col">
+                                        <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100" data-gt-lang="ar">العربية</a>
+                                        <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100" data-gt-lang="en">English</a>
+                                        <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100" data-gt-lang="de">Deutsch</a>
+                                        <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100" data-gt-lang="it">Italiano</a>
+                                        <a href="#" class="glink nturl px-4 py-2 hover:bg-gray-100" data-gt-lang="ru">Русский</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+            
+                    </div>
+            
+                    <!-- RIGHT SIDE -->
+                    <div class="flex items-center gap-4">
+            
+                        <!-- SEARCH -->
+                        <div class="relative hidden sm:block">
+                            <input type="text" placeholder="بحث عن مشروع..."
+                                class="bg-white/10 border border-white/50 rounded-full px-4 py-1 text-sm outline-none focus:bg-white/50 w-64 text-right text-white placeholder-white/70" />
+                            <i class="fas fa-search absolute left-3 top-2 text-white/60"></i>
+                        </div>
+            
+                        <!-- CTA -->
+                        <a href="https://wa.me/201044207402"
+                            class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full text-sm font-bold shadow-lg transition text-white">
+                            ابدأ الآن
+                        </a>
+            
+                    </div>
+            
+                </div>
+            </header>
+            <div id="google_translate_element2"></div>
+        <!-- </nav> -->
+        <script>
+            document.addEventListener('click', function (event) {
+                // Get the navbar collapse element
+                const navbarCollapse = document.getElementById('navbarCollapse');
+
+                // Check if the click is outside the navbar and it's currently open
+                if (!navbarCollapse.contains(event.target) && navbarCollapse.classList.contains('show')) {
+                    // Collapse the navbar
+                    const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                        toggle: true
+                    });
+                }
+            });
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const dropdownLink = document.querySelector('.dropdown-toggle');
+                const dropdownMenu = document.querySelector('.dropdown-menu');
+                const dropdownMenu_1 = document.querySelector('.nav-item.dropdown');
+
+                dropdownLink.addEventListener('click', function (e) {
+                    e.preventDefault(); // منع التنقل الافتراضي
+                    const isMenuOpen = dropdownMenu.classList.contains('show');
+
+                    if (!isMenuOpen) {
+                        // إذا لم تكن القائمة مفتوحة، قم بفتحها
+                        dropdownMenu.classList.add('show');
+                        this.setAttribute('aria-expanded', 'true');
+                    } else {
+                        // إذا كانت القائمة مفتوحة، اسمح بالتنقل إلى صفحة "service.html"
+                        window.location.href = this.getAttribute('href');
+                    }
+                });
+
+                // غلق القائمة عند النقر في أي مكان آخر
+                document.addEventListener('click', function (e) {
+                    if (!e.target.closest('.nav-item.dropdown')) {
+                        dropdownMenu.classList.remove('show');
+                        dropdownLink.setAttribute('aria-expanded', 'false');
+                    }
+                   
+
+                });
+            });
+            document.addEventListener("DOMContentLoaded", function () {
+                    // Check if the current page is service.html
+                    if (window.location.pathname.includes("service.html")) {
+                        // Add class to navbar to make it smaller
+                        document.querySelector('nav').classList.add('small-tab');
+                    }
+                });
+
+
+        </script>
+  
+    <!-- Services Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h5 class="text-primary text-uppercase" style="letter-spacing: 5px;">خدماتنا</h5>
+                <h1 class="display-5 mb-0">خدماتنا في مجالات متعددة</h1>
+            </div>
+            <!-- فلتر الأقسام / التنقل السريع -->
+            <div class="container mb-5">
+                <div class="text-center">
+                    <h4 class="mb-4 text-primary">اختر المجال الذي تهتم به:</h4>
+                    <div class="d-flex flex-wrap justify-content-center gap-3 gap-md-4">
+                        <a href="#medical" class="btn btn-outline-primary rounded-pill px-4 py-2">الطب والرعاية الصحية</a>
+                        <a href="#agriculture" class="btn btn-outline-primary rounded-pill px-4 py-2">الزراعة والحيوانات</a>
+                        <a href="#transport" class="btn btn-outline-primary rounded-pill px-4 py-2">النقل والمرور</a>
+                        <a href="#industry" class="btn btn-outline-primary rounded-pill px-4 py-2">الصناعة والتصنيع</a>
+                        <a href="#security" class="btn btn-outline-primary rounded-pill px-4 py-2">الأمن والسلامة</a>
+                        <a href="#airport-logistics" class="btn btn-outline-primary rounded-pill px-4 py-2">المطارات واللوجستيات</a>
+                        <a href="#retail" class="btn btn-outline-primary rounded-pill px-4 py-2">التجزئة والمتاجر</a>
+                        <a href="#face-recognition" class="btn btn-outline-primary rounded-pill px-4 py-2">التعرف على الوجه</a>
+                        <a href="#sports" class="btn btn-outline-primary rounded-pill px-4 py-2">الرياضة واللياقة</a>
+                        <a href="#general-tools" class="btn btn-outline-primary rounded-pill px-4 py-2">أدوات عامة</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                
+                <!-- القسم 1: الرعاية الصحية والطب -->
+                <div id="medical" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">الرعاية الصحية والطب</h2>
+                    <div class="row g-4">
+                        <!-- ضع هنا كروت المشاريع الطبية (الأرقام: 1,24,33,38,40,41,50,54,58,59,60,...) -->
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="ai-driven-dr-detection-system.html" class="service-link">
+                                <div class="service-item bg-light border-bottom border-5 border-primary rounded h-100">
+                        
+                                    <div class="position-relative p-3 text-end">
+                        
+                                        <!-- Image -->
+                                        <img src="img/1.jpg" alt="تشخيص اعتلال الشبكية السكري" class="img-fluid mb-3 rounded">
+                        
+                                        <!-- Title -->
+                                        <h3 class="service-title mb-3">
+                                            نظام تشخيص اعتلال الشبكية السكري بالذكاء الاصطناعي
+                                            باستخدام ANN و RCNN
+                                        </h3>
+                        
+                                        <!-- Price -->
+                                        <div class="price-box mb-3">
+                                            <div>
+                                                <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                                <span class="fw-bold text-danger">$50</span>
+                                            </div>
+                                            <div class="egp-price">
+                                                2500 جنيه مصري
+                                            </div>
+                                        </div>
+                        
+                                        <!-- More -->
+                                        <span class="fw-semibold text-primary">
+                                            للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                        </span>
+                                        
+                        
+                                    </div>
+                        
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="brain-tumor-detection-from-mri-images.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/24.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف أورام المخ من صور الرنين المغناطيسي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                             
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="diabetes-prediction-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/33.gif" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بمرض السكري
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="disease-predictor-symptom-based-disease-prediction-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/38.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام تنبؤ الأمراض بناءً على الأعراض
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="natural-disaster-prediction.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/39.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام توقع الكوارث الطبيعية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="diabetes-risk-prediction-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/40.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتوقع مرض السكري
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="facial-disease-detection-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/41.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الأمراض الجلدية على الوجه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                         
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="heart-disease-prediction-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/50.gif" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بأمراض القلب
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                  
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="human-skin-disease-with-ai-disease-detection.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/54.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف أمراض الجلد باستخدام الذكاء الاصطناعي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                          
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="multi-disease-prediction-system.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/58.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بالأمراض المتعددة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="malaria-classifier-detector.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/59.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتصنيف الملاريا
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                  
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="lungs-disease-detection-system-using-ai.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/60.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف أمراض الرئة باستخدام الذكاء الاصطناعي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                       
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <a href="sign-language-converter.html" class="service-link">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/86.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتحويل الصوت والنص إلى لغة الإشارة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <!-- More -->
+                                    <span class="fw-semibold text-primary">
+                                        للمزيد <i class="bi bi-arrow-left ms-1"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- القسم 2: الزراعة -->
+                <div id="agriculture" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">الزراعة والمزارع الذكية والحيوانات الزراعية</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/9.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمتابعة صحة الأبقار وتحليل الأمراض وإدارة المزارع الذكية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$1000</span>
+                                        <span class="fw-bold text-danger fs-5">$700</span>
+                                        <div class="egp-price">
+                                            35000 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-cow-health-detection-disease-analysis-smart-farm-monitoring-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/12.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف حيوانات الألباكا
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="alpaca-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/14.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بأمراض أوراق التفاح
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="apple-leaf-disease-predictor.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/15.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف النمل
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ant-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/18.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف النحل والفراشات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="bee-and-butterfly-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/22.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ الكتاكيت والدواجن
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="chick-and-chicken-detection-and-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/23.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ الكرنب
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="cabbage-detection-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/26.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الأبقار ومتابعة حالتها الصحية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="cow-detection-and-health-monitoring-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/27.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بأمراض القطن
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="cotton-disease-prediction-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/29.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتوصية بالمحاصيل بناءً على التربة والبيئة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="crop-recommendation-system-2.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/30.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتوصية بالمحاصيل وتحليل خصوبة التربة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="crop-recommendation-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/31.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتوصية المحاصيل واكتشاف أمراض النباتات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="crop-recommendation-and-plant-disease-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/44.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعد واكتشاف البيض
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="egg-counting-detection-using-python-and-opencv.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/45.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتقييم جودة الفواكه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="fruit-quality-detection-system-using-artificial-intelligence.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/53.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتشخيص صحة النباتات ووصف العلاج
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="intelligent-plant-health-diagnosis-prescription-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/70.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتتبع القرع
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="pumpkin-detection-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/87.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتتبع الأغنام
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="sheep-detection-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/92.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ البيض
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$150</span>
+                                        <span class="fw-bold text-danger fs-5">$100</span>
+                                        <div class="egp-price">
+                                            5000 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-egg-detection-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/96.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        تطبيق ذكي لاكتشاف أمراض النباتات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="plant-disease-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/99.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بأمراض أوراق الشاي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="tea-leaf-disease-prediction.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/105.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الخنازير البرية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="wild-boar-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- الأرقام: 9,12,14,15,18,22,23,26,27,29,30,31,44,45,53,70,... -->
+                    </div>
+                </div>
+                
+                <!-- القسم 3: النقل والمرور -->
+                <div id="transport" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">النقل والمرور والسيارات</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/5.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعدّ المركبات داخل المسارات المرورية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$100</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-based-vehicle-lane-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/11.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف المركبات وتصنيفها
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$100</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-vehicle-detection-and-classification-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/17.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ القوارب والسفن
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="boat-and-ship-detection-and-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/19.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وقراءة لوحات السيارات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="automatic-license-plate-detection-and-recognition-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/20.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتمويه لوحات السيارات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="automatic-license-plate-detection-blurring-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/37.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف نعاس السائق
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="driver-drowsiness-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/49.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف مخالفات الخوذة ولوحات المركبات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="helmet-violation-detection-and-number-plate-detection-with-yolo12-gemini-ai.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/52.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتصنيف المركبات في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="gemini-vision-real-time-vehicle-detection-and-classification-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/67.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ الأشخاص في وسائل النقل العامة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="person-detection-and-counting-system-for-public-transport.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/80.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف استخدام الهاتف أثناء القيادة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-detection-of-mobile-phone-use-while-riding.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/81.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتتبع الركشات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="rickshaw-detection-and-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/91.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتتبع الحفر في الطرق
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-lane-track-pothole-detection-and-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/94.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعد المركبات واتجاهات المرور في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-traffic-flow-real-time-vehicle-counter.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/97.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتحليل المركبات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-detection-and-analysis-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/101.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام تتبع وعدّ المركبات حسب المسار
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$150</span>
+                                        <span class="fw-bold text-danger fs-5">$100</span>
+                                        <div class="egp-price">
+                                            5000 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-lane-traffic-tracker-and-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/102.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام التعرف وتصنيف المركبات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-identification-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/103.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام تتبع المركبات وتحديد الاتجاه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-direction-detection-and-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/104.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام اكتشاف المركبات وتقدير السرعة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-detection-and-speed-estimation-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/107.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعد المركبات وقياس السرعة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-speed-detection-and-counting-system.html">
+                        
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/108.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ المركبات والأشخاص والأجسام
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="vehicle-person-and-object-detection-and-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- الأرقام: 5,11,17,19,50,37,49,52,67,... -->
+                    </div>
+                </div>
+                
+                <!-- القسم 4: الصناعة والتصنيع -->
+                <div id="industry" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">الصناعة والتصنيع والجودة</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/2.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">نظام ذكي لتصنيف المخلفات باستخدام الذكاء الاصطناعي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$100</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                                    <a href="ai-waste-classifier.html"><i class="bi bi-arrow-left ms-2">للمزيد </i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/4.jpg" class="img-fluid mb-3" style="max-width: 100%;margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 0px;">نظام ذكي لاكتشاف إحكام غلق أغطية اللقاحات </h3>
+                                    <!-- <p>تركيب انتركم أصبح ضرورياً لحماية منزلك. يتيح لك التحكم في دخول الزوار بكل أمان، ويمنع
+                                                                المتطفلين واللصوص، مما يعزز الراحة
+                                                                والسلامة داخل منزلك أو فيلتك.</p> -->
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                                    <a href="ai-based-vaccine-cap-seal-detection-system.html"><i class="bi bi-arrow-left ms-2">للمزيد </i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/7.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتصنيف الحقائب على سيور النقل
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-bag-detection-and-classification-for-conveyor-belt-monitoring.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/8.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمراقبة ماكينات عدّ النقود
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-cash-counter-surveillance-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/10.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتعرف على أجزاء المحركات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-engine-parts-recognition-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/13.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لفحص وعدّ ملصقات المنتجات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="automated-product-label-inspection-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/35.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        تصنيف طازجة اللحوم باستخدام التعلم العميق وCNN
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="deep-learning-approach-for-meat-freshness-classification-using-cnn.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/43.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتحليل الحفارات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="excavator-detection-and-analysis-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/74.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام عد أكياس الأسمنت في الوقت الحقيقي على سيور النقل
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-cement-bag-counter-for-industrial-conveyor-systems.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/76.gif" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام كشف التشققات في سكك الحديد باستخدام الرؤية الحاسوبية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="railway-track-crack-detection-with-python-computer-vision.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/85.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لقراءة العدادات التناظرية باستخدام الذكاء الاصطناعي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$100</span>
+                                        <span class="fw-bold text-danger fs-5">$70</span>
+                                        <div class="egp-price">
+                                            3500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-analog-meter-reader-with-yolo-and-gemini-ai.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- الأرقام: 2,4,7,8,10,13,50,43,74,76,... -->
+                    </div>
+                </div>
+                
+                <!-- القسم 5: الأمن والسلامة -->
+                <div id="security" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">الأمن والسلامة العامة</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/21.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لحماية الأطفال داخل المصاعد
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                    </div>
+                        
+                                    <a href="child-safety-detection-system-for-elevators.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/28.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمتابعة السلامة في مواقع البناء
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                    </div>
+                        
+                                    <a href="construction-site-safety-tracker.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/56.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف سقوط الأشخاص
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="human-fall-detection-system-using-yolo-and-pose-estimation.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/65.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف معدات الوقاية الشخصية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="personal-protective-equipment-ppe-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/66.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف سقوط الأشخاص
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="person-fall-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/84.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمراقبة واكتشاف السرقة في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-theft-monitoring-and-detection-system-with-immediate-sms-alerts.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/100.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام المراقبة الذكي لاكتشاف الأجسام في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="surveillance-master-real-time-object-detection-and-video-stream-manipulation-software.html">
+                        
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/106.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف العنف
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="violence-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/109.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الأنشطة المشبوهة باستخدام تحليل وضعيات الجسم
+                                        <!-- نظام ذكي لاكتشاف وعدّ المركبات والأشخاص والأجسام -->
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="yolo-pose-identification-for-suspicious-activity-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- الأرقام: 21,28,56,65,66,... -->
+                    </div>
+                </div>
+                <!-- القسم السادس:   -->
+                <div id="airport-logistics" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">المطارات واللوجستيات والتوزيع</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/6.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمراقبة عمليات الطواقم الأرضية في المطارات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="ai-powered-airport-ground-crew-operations-monitoring.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/62.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمراقبة وتتبع مناطق الانتظار
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="parking-zone-monitoring-and-tracking-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/63.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتحليل الطرود
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="package-detection-and-analysis-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/64.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الأجسام والتنبيه عبر البريد الإلكتروني
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="object-detection-with-computer-vision-get-notified-with-gmail.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                              <!-- الأرقام: 6, 62, 63, 64,... -->
+                
+                    </div>
+                </div>
+                <!-- القسم السابع:   -->
+                <div id="retail" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">التجزئة والمتاجر وتحليل السلوك</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/3.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 0px;">نظام ذكي لتحليل سلوك العملاء داخل المتاجر القائم على
+                                        الذكاء الاصطناعي </h3>
+                                    <!-- <p>نظام التحكم في الأبواب والبوابات مع حلول متطورة مثل البصمة، الكارت، وبصمة الوجه، لضمان أمان
+                                                                تام وراحة في فتح الأبواب
+                                                                والتحكم في الدخول والخروج بكل سهولة.</p> -->
+                                    <div class="mb-2">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                                    <a href="ai-based-retail-human-activity-recognition-system.html"><i class="bi bi-arrow-left ms-2">للمزيد
+                                        </i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/46.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتصنيف صور الطعام
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="foodvision-food-image-classification-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/79.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاستهداف الإعلانات حسب النوع في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-gender-based-ad-targeting-using-computer-vision.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                    <!-- الأرقام:, 46, 3,... -->
+
+                
+                    </div>
+                </div>
+                <!-- القسم الثامن:   -->
+                <div id="face-recognition" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">التعرف على الوجوه والحضور والجنس</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/34.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        واجهة DeepFaceGUI للتعرف على الوجوه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="deepfacegui.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/42.jpeg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للحضور باستخدام التعرف على الوجه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="face-recognition-attendance-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/48.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتحديد جنس الأفراد
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="facial-gender-identification-webapp.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/83.jpeg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتسجيل الحضور باستخدام التعرف على الوجه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-facial-recognition-attendance-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                    <!-- الأرقام: 48, 42, 34,... -->
+
+                
+                    </div>
+                </div>
+                <!-- القسم التاسع:   -->
+                <div id="sports" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">الرياضة واللياقة البدنية</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/32.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي للتنبؤ بضربات الكريكيت
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="cricket-shot-prediction-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/71.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لتتبع وضعيات الجسم وحساب عدد تمارين الضغط
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="pose-detection-and-real-time-push-up-counter.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                           <!-- الأرقام: , 71, 32,... -->
+
+
+                
+                    </div>
+                </div>
+                <!-- القسم العاشر:   -->
+                <div id="general-tools" class="mb-5 scroll-mt-100">
+                    <h2 class="text-center text-primary mb-4">أدوات عامة – عد وتتبع – تنبيهات – تطبيقات مفتوحة</h2>
+                    <div class="row g-4">
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/16.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتصنيف فصائل الحيوانات
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="animal-species-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/25.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        إنشاء صور حرارية اصطناعية باستخدام بايثون
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="creating-fake-thermal-images-using-python.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/36.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتصنيف الأشياء المخصصة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="custom-object-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/47.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعد وتوجيه حركة الأجسام
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="flow-count-ai-powered-direction-tracker.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/51.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وتتبع حركة اليد
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="hand-movement-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/55.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وضعيات جسم الإنسان
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="human-pose-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/57.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي متعدد المهام لاكتشاف الكائنات والتجزئة وتقدير وضعية الجسم
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$150</span>
+                                        <span class="fw-bold text-danger fs-5">$90</span>
+                                        <div class="egp-price">
+                                            4500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="multi-functional-object-detection-segmentation-and-pose-estimation-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/61.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف وعدّ الأشخاص
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="people-detection-and-counting-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/68.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعدّ الأشخاص باستخدام تتبع الاتجاه
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="person-counting-using-directional-tracking.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/69.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام عدّ الأشخاص باستخدام Python OpenCV مع تنبيهات Gmail
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="python-opencv-people-counting-with-gmail-alerts.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/73.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام عدّ الأشياء في الوقت الحقيقي باستخدام YOLO12
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-counter-using-yolo12-and-virtual-line-crossing-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/75.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام كشف الأجسام في الوقت الحقيقي باستخدام YOLOv10
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-object-detection-using-yolov10-and-opencv.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/39.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام توقع الكوارث الطبيعية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="natural-disaster-prediction.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/77.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام تتبع وعدّ الأشخاص في الوقت الحقيقي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-people-tracking-and-counting.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/78.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لرصد الدخول والخروج باستخدام تتبع الرؤوس
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="real-time-head-based-entry-exit-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/82.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمطابقة السير الذاتية مع الوصف الوظيفي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="resume-and-job-description-matching-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/88.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف النصوص الاحتيالية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="scam-text-detection-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/89.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        تطبيق ذكي للتعرف الضوئي على النصوص (OCR)
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="digital-instruments-reading.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/90.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لعدّ الأجسام باستخدام خط افتراضي
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-line-based-flow-counter-for-real-time-object-detection.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/93.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        مشروع سناب إيموجي للواقع المعزز
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="snap-emoji-project.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/95.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لمراقبة الشوارع وعدّ حركة الأفراد
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="smart-street-surveillance-real-time-people-flow-counter.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/98.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الأخبار الكاذبة
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$70</span>
+                                        <span class="fw-bold text-danger fs-5">$50</span>
+                                        <div class="egp-price">
+                                            2500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="truth-detector.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                            <div class="service-item bg-light border-bottom border-5 border-primary rounded">
+
+                                <div class="position-relative p-2" style="text-align: right;">
+                                    <img src="img/72.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
+                                    <h3 class="service-title mb-2" style="margin-top: 7px;">
+                                        نظام ذكي لاكتشاف الحيوانات الأليفة والتنبيهات الذكية
+                                    </h3>
+                        
+                                    <div class="mb-3">
+                                        <span class="text-muted text-decoration-line-through me-2">$150</span>
+                                        <span class="fw-bold text-danger fs-5">$90</span>
+                                        <div class="egp-price">
+                                            4500 جنيه مصري
+                                        </div>
+                                    </div>
+                        
+                                    <a href="pet-detection-smart-alert-system.html">
+                                        <i class="bi bi-arrow-left ms-2">للمزيد</i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                                                    <!-- الأرقام:16, 25, 36, 47, 51,39, 55, 57, 61, 68, 69, 72, 73, 75... -->
+
+                
+                    </div>
+                </div>
+
+    
+            </div>
+        </div>
+    </div>
+    <!-- Services End -->
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container pt-2">
+        <div class="row g-2">
+
+            <div class="col-lg-4 col-md-6">
+                <h3 class="text-white mb-4">الصفحات</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>الرئيسية</a>
+
+                    <a class="text-light mb-2" href="projects.html"><i
+                            class="bi bi-arrow-right text-primary me-2"></i>هاردوير AI</a>
+                    <a class="text-light mb-2" href="about.html"><i class="bi bi-arrow-right text-primary me-2"></i>من
+                        نحن</a>
+                    <!-- <a class="text-light mb-2" href="service.html"><i
+    									class="bi bi-arrow-right text-primary me-2"></i>خدماتنا</a> -->
+                    <!-- <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>اتصل
+                            بنا</a> -->
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تواصل معنا</h3>
+                <!-- <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>العبور - الحي الثاني - سنترال وي
+    						</p> -->
+                <p class="mb-2" style="font-size: 0.9em;">
+                    <i class="bi bi-envelope-open text-primary me-2"></i> mindpi0101@gmail.com
+                </p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>01044207402</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">تابعنا</h3>
+                <div class="d-flex">
+
+                    <a class="btn btn-primary btn-lg-square rounded me-2"
+                        href="https://www.facebook.com/share/1DKxKE8UfQ/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://youtube.com/@mindpi0101"><i
+                            class="fab fa-youtube"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.instagram.com"><i
+                            class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-primary btn-lg-square rounded me-2" href="https://x.com"><i
+                            class="fab fa-twitter"></i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Custom styles to further reduce the footer size */
+    .container-fluid.bg-dark {
+        padding: 1.5rem 0;
+        /* Minimal footer padding */
+    }
+
+    .container.pt-2 {
+        padding-top: 1rem;
+        /* Even smaller top padding */
+    }
+
+    .row.g-2 {
+        gap: 0.5rem;
+        /* Minimal gap between columns */
+    }
+
+    .text-light {
+        font-size: 0.8rem;
+        /* Smaller font size for footer text */
+    }
+</style>
+
+<!-- Footer Bottom -->
+<div class="container-fluid bg-primary text-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">All Rights Reserved to <a class="text-white border-bottom"
+                        href="index.html">Mindpi</a> 2026</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by <a class="text-white border-bottom"
+                        href="https://www.linkedin.com/in/mohamed2mohsen">Mohamed Mohsen</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+
+
+
+
+
+
+<!-- Your existing content here -->
+
+<!-- Floating Buttons -->
+<div class="floating-buttons">
+    <!-- Call Button -->
+    <a href="tel:01044207402" class="call-btn" aria-label="Call directly to 01044207402">
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <!-- WhatsApp Button -->
+
+    <a id="whatsapp-link" class="whatsapp-btn" target="_blank" aria-label="Open WhatsApp Chat">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Detect device type and update the WhatsApp link
+        const whatsappNumber = "201044207402";
+        const message = ""; // Pre-fill a message if desired
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        const whatsappLink = isMobile
+            ? `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+            : `https://web.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
+
+        document.getElementById("whatsapp-link").href = whatsappLink;
+    </script>
+
+</div>
+
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<!-- Custom JavaScript -->
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>
