@@ -354,6 +354,63 @@
                 line-height: 1.2;
             }
         }
+        .service-title {
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            min-height: 72px; /* يوحد ارتفاع العناوين */
+        }
+
+        .service-item img {
+            height: 180px;
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .service-item {
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover .service-item {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .service-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        .service-item {
+            transition: all 0.3s ease;
+        }
+
+        .service-link:hover .service-item {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 576px) {
+            .service-title {
+                font-size: 0.95rem;
+                min-height: auto;
+            }
+
+            .service-item img {
+                height: 160px;
+            }
+
+            .price-box {
+                text-align: right;
+            }
+        }
 
 
     </style>
@@ -624,7 +681,7 @@
                             </a>
                         </div>
 
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="brain-tumor-detection-from-mri-images.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -650,7 +707,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="diabetes-prediction-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -675,7 +732,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="disease-predictor-symptom-based-disease-prediction-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -700,7 +757,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="natural-disaster-prediction.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -725,7 +782,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="diabetes-risk-prediction-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -750,7 +807,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="facial-disease-detection-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -776,7 +833,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="heart-disease-prediction-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -802,7 +859,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="human-skin-disease-with-ai-disease-detection.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -828,7 +885,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="multi-disease-prediction-system.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -853,7 +910,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="malaria-classifier-detector.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -879,7 +936,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="lungs-disease-detection-system-using-ai.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -905,7 +962,7 @@
                             </div>
                             </a>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <a href="sign-language-converter.html" class="service-link">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
@@ -938,7 +995,7 @@
                 <div id="agriculture" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">الزراعة والمزارع الذكية والحيوانات الزراعية</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/9.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -960,7 +1017,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/12.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -982,7 +1039,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/14.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1004,7 +1061,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/15.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1026,7 +1083,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/18.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1048,7 +1105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/22.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1070,7 +1127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/23.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1092,7 +1149,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/26.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1114,7 +1171,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/27.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1136,7 +1193,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/29.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1158,7 +1215,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/30.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1180,7 +1237,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/31.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1202,7 +1259,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/44.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1224,7 +1281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/45.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1246,7 +1303,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/53.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1268,7 +1325,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/70.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1290,7 +1347,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/87.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1312,7 +1369,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/92.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1334,7 +1391,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/96.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1356,7 +1413,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/99.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1378,7 +1435,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/105.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1408,7 +1465,7 @@
                 <div id="transport" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">النقل والمرور والسيارات</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/5.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1430,7 +1487,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/11.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1452,7 +1509,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/17.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1474,7 +1531,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/19.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1496,7 +1553,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/20.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1518,7 +1575,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/37.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1540,7 +1597,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/49.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1562,7 +1619,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/52.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1584,7 +1641,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/67.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1606,7 +1663,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/80.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1628,7 +1685,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/81.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1650,7 +1707,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/91.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1672,7 +1729,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/94.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1694,7 +1751,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/97.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1716,7 +1773,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/101.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1738,7 +1795,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/102.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1760,7 +1817,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/103.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1782,7 +1839,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/104.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1804,7 +1861,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/107.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1827,7 +1884,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/108.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1857,7 +1914,7 @@
                 <div id="industry" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">الصناعة والتصنيع والجودة</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/2.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1875,7 +1932,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/4.jpg" class="img-fluid mb-3" style="max-width: 100%;margin-bottom: 50px;">
@@ -1894,7 +1951,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/7.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1916,7 +1973,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/8.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1938,7 +1995,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/10.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1960,7 +2017,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/13.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -1982,7 +2039,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/35.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2004,7 +2061,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/43.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2026,7 +2083,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/74.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2048,7 +2105,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/76.gif" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2070,7 +2127,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/85.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2100,7 +2157,7 @@
                 <div id="security" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">الأمن والسلامة العامة</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/21.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2119,7 +2176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/28.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2138,7 +2195,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/56.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2160,7 +2217,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/65.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2182,7 +2239,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/66.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2204,7 +2261,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/84.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2226,7 +2283,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/100.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2249,7 +2306,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/106.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2272,7 +2329,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/109.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2304,7 +2361,7 @@
                 <div id="airport-logistics" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">المطارات واللوجستيات والتوزيع</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/6.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2326,7 +2383,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/62.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2348,7 +2405,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/63.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2370,7 +2427,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/64.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2400,7 +2457,7 @@
                 <div id="retail" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">التجزئة والمتاجر وتحليل السلوك</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/3.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2421,7 +2478,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/46.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2443,7 +2500,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/79.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2474,7 +2531,7 @@
                 <div id="face-recognition" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">التعرف على الوجوه والحضور والجنس</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/34.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2496,7 +2553,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/42.jpeg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2518,7 +2575,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/48.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2540,7 +2597,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/83.jpeg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2571,7 +2628,7 @@
                 <div id="sports" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">الرياضة واللياقة البدنية</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/32.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2593,7 +2650,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/71.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2625,7 +2682,7 @@
                 <div id="general-tools" class="mb-5 scroll-mt-100">
                     <h2 class="text-center text-primary mb-4">أدوات عامة – عد وتتبع – تنبيهات – تطبيقات مفتوحة</h2>
                     <div class="row g-4">
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/16.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2647,7 +2704,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/25.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2670,7 +2727,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/36.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2692,7 +2749,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/47.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2714,7 +2771,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/51.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2737,7 +2794,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/55.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2760,7 +2817,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/57.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2783,7 +2840,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/61.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2808,7 +2865,7 @@
                         
                         
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/68.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2830,7 +2887,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/69.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2854,7 +2911,7 @@
                         </div>
                         
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/73.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2877,7 +2934,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/75.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2899,7 +2956,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/39.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2921,7 +2978,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/77.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2943,7 +3000,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/78.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2965,7 +3022,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/82.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -2987,7 +3044,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/88.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3009,7 +3066,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/89.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3031,7 +3088,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/90.webp" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3055,7 +3112,7 @@
                         </div>
                         
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/93.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3078,7 +3135,7 @@
                             </div>
                         </div>
                         
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/95.png" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3100,7 +3157,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
                                 <div class="position-relative p-2" style="text-align: right;">
                                     <img src="img/98.jpg" class="img-fluid mb-3" style="max-width: 100%; margin-bottom: 50px;">
@@ -3122,7 +3179,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 wow zoomIn" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-12 wow zoomIn" data-wow-delay="0.3s">
                             <div class="service-item bg-light border-bottom border-5 border-primary rounded">
 
                                 <div class="position-relative p-2" style="text-align: right;">
