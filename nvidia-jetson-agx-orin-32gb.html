@@ -315,11 +315,24 @@
         element.classList.add("active-thumb");
     }
 </script>
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
 
 <body>
 
     <!-- Header / الهيدر -->
     <header class="gradient-bg sticky top-0 z-50 shadow-xl">
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menuBtn" class="lg:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
 
             <!-- LEFT SIDE -->
@@ -369,18 +382,18 @@
 
             </div>
 
-            <!-- left SIDE -->
+            <!-- RIGHT SIDE -->
             <div class="flex items-center gap-4">
 
                 <!-- SEARCH -->
                 <div class="relative hidden sm:block">
                     <input type="text" placeholder="بحث عن مشروع..."
-                        class="bg-white/10 border border-white/20 rounded-full px-4 py-1 text-sm outline-none focus:bg-white/20 w-64 text-left text-white placeholder-white/70" />
+                        class="bg-white/10 border border-white/20 rounded-full px-4 py-1 text-sm outline-none focus:bg-white/20 w-64 text-right text-white placeholder-white/70" />
                     <i class="fas fa-search absolute left-3 top-2 text-white/60"></i>
                 </div>
 
                 <!-- CTA -->
-                <a href="#"
+                <a href="https://wa.me/201044207402"
                     class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full text-sm font-bold shadow-lg transition text-white">
                     ابدأ الآن
                 </a>
@@ -389,6 +402,15 @@
 
         </div>
     </header>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-[#1e0533] text-white lg:hidden">
+        <nav class="flex flex-col px-6 py-4 gap-4 text-right">
+            <a href="index.html">الرئيسية</a>
+            <a href="projects.html">مشاريع AI</a>
+            <a href="products.html">هاردوير AI</a>
+            <a href="about.html">من نحن</a>
+        </nav>
+    </div>
     <div id="google_translate_element2"></div>
 
 

@@ -282,11 +282,24 @@
 
     });
 </script>
+<script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+</script>
 
 <body>
 
     <!-- Header / الهيدر -->
     <header class="gradient-bg sticky top-0 z-50 shadow-xl">
+        <!-- MOBILE MENU BUTTON -->
+        <button id="menuBtn" class="lg:hidden text-white text-2xl">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
 
             <!-- LEFT SIDE -->
@@ -356,6 +369,16 @@
 
         </div>
     </header>
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu" class="hidden bg-[#1e0533] text-white lg:hidden">
+        <nav class="flex flex-col px-6 py-4 gap-4 text-right">
+            <a href="index.html">الرئيسية</a>
+            <a href="projects.html">مشاريع AI</a>
+            <a href="products.html">هاردوير AI</a>
+            <a href="about.html">من نحن</a>
+        </nav>
+    </div>
+
     <div id="google_translate_element2"></div>
 
     <section class="max-w-5xl mx-auto px-4 py-10 text-left select-none" dir="ltr">
