@@ -283,11 +283,13 @@
     });
 </script>
 <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const mobileMenu = document.getElementById("mobileMenu");
+    document.addEventListener("DOMContentLoaded", () => {
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
     });
 </script>
 
@@ -295,15 +297,15 @@
 
     <!-- Header / الهيدر -->
     <header class="gradient-bg sticky top-0 z-50 shadow-xl">
-        <!-- MOBILE MENU BUTTON -->
-        <button id="menuBtn" class="lg:hidden text-white text-2xl">
-            <i class="fas fa-bars"></i>
-        </button>
 
         <div class="container mx-auto px-6 py-4 flex justify-between items-center text-white">
 
             <!-- LEFT SIDE -->
             <div class="flex items-center gap-8">
+                <!-- MOBILE MENU BUTTON -->
+                <button id="menuBtn" class="lg:hidden text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
 
                 <!-- LOGO -->
                 <div class="text-3xl font-bold tracking-widest text-white">
@@ -324,7 +326,7 @@
                     <li class="menu-item menu-item-gtranslate gt_container-rswlkm">
                         <a href="#"
                             class="gt_switcher-popup glink nturl notranslate flex items-center gap-2 text-white">
-                            <img src="/wp-content/plugins/gtranslate/flags/svg/en.svg" width="16" height="16" alt="ar">
+                            <!-- <img src="/wp-content/plugins/gtranslate/flags/svg/en.svg" width="16" height="16" alt="ar"> -->
                             <span>العربية</span>
                             <span class="text-xs">▼</span>
                         </a>
@@ -360,7 +362,7 @@
                 </div>
 
                 <!-- CTA -->
-                <a href="#"
+                <a href="https://wa.me/201044207402"
                     class="bg-purple-600 hover:bg-purple-700 px-6 py-2 rounded-full text-sm font-bold shadow-lg transition text-white">
                     ابدأ الآن
                 </a>
@@ -369,16 +371,16 @@
 
         </div>
     </header>
-    <!-- MOBILE MENU -->
-    <div id="mobileMenu" class="hidden bg-[#1e0533] text-white lg:hidden">
-        <nav class="flex flex-col px-6 py-4 gap-4 text-right">
-            <a href="index.html">الرئيسية</a>
-            <a href="projects.html">مشاريع AI</a>
-            <a href="products.html">هاردوير AI</a>
-            <a href="about.html">من نحن</a>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-[#1e0533] text-white border-t border-white/10">
+
+        <nav class="flex flex-col px-6 py-4 gap-4 text-right text-lg">
+            <a href="index.html" class="hover:text-purple-400">الرئيسية</a>
+            <a href="projects.html" class="hover:text-purple-400">مشاريع AI</a>
+            <a href="products.html" class="hover:text-purple-400">هاردوير AI</a>
+            <a href="about.html" class="hover:text-purple-400">من نحن</a>
         </nav>
     </div>
-
     <div id="google_translate_element2"></div>
 
     <section class="max-w-5xl mx-auto px-4 py-10 text-left select-none" dir="ltr">
