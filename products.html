@@ -262,8 +262,64 @@
             transform: translateY(-4px);
             transition: 0.3s ease;
         }
+        /* إصلاح المساحة الفاضية شمال في الموبايل */
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
+        /* كونتينر المنتجات */
+        .woocommerce.main-products {
+            padding: 0 10px;
+        }
+
+        /* جريد المنتجات */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 منتجات جنب بعض */
+            gap: 12px;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* كل منتج */
+        .products .product {
+            width: 100% !important;
+            float: none !important;
+            margin: 0 !important;
+        }
+
+        /* صورة المنتج */
+        .thumbnail-wrapper img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+
+        /* اسم المنتج */
+        .product-name {
+            font-size: 13px;
+            text-align: center;
+        }
+
+        /* السعر */
+        .price {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        /* موبايل صغير */
+        @media (max-width: 480px) {
+            .products {
+                grid-template-columns: repeat(2, 1fr); /* منتجين بس لو الشاشة ضيقة */
+            }
+        }
+
 
     </style>
+    
 </head>
 <script>
     function googleTranslateElementInit2() {
