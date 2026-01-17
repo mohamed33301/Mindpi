@@ -262,7 +262,7 @@
             transform: translateY(-4px);
             transition: 0.3s ease;
         }
-        /* إصلاح المساحة الفاضية شمال في الموبايل */
+        /* منع الاسكرول العرضي */
         html, body {
             overflow-x: hidden;
             max-width: 100%;
@@ -270,50 +270,69 @@
 
         /* كونتينر المنتجات */
         .woocommerce.main-products {
-            padding: 0 10px;
+            padding: 10px;
         }
 
         /* جريد المنتجات */
         .products {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 منتجات جنب بعض */
-            gap: 12px;
-            margin: 0 !important;
-            padding: 0 !important;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px; /* مسافة حقيقية بين الكروت */
         }
 
-        /* كل منتج */
+        /* كارت المنتج */
         .products .product {
-            width: 100% !important;
-            float: none !important;
-            margin: 0 !important;
+            background: #fff;
+            border-radius: 12px;
+            padding: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform .25s ease, box-shadow .25s ease;
+        }
+
+        /* Hover */
+        .products .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
         }
 
         /* صورة المنتج */
-        .thumbnail-wrapper img {
+        .thumbnail-wrapper {
             width: 100%;
-            height: auto;
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .thumbnail-wrapper img {
+            max-width: 100%;
+            max-height: 100%;
             object-fit: contain;
         }
 
-        /* اسم المنتج */
+        /* اسم المنتج
         .product-name {
             font-size: 13px;
             text-align: center;
-        }
+            margin-top: 8px;
+            line-height: 1.4;
+        } */
 
         /* السعر */
         .price {
             display: block;
             text-align: center;
             font-size: 14px;
-            margin-top: 4px;
+            font-weight: bold;
+            margin-top: 6px;
+            color: #3e0a6d;
         }
 
         /* موبايل صغير */
         @media (max-width: 480px) {
             .products {
-                grid-template-columns: repeat(2, 1fr); /* منتجين بس لو الشاشة ضيقة */
+                grid-template-columns: repeat(2, 1fr);
             }
         }
 
